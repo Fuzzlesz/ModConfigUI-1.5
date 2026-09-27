@@ -558,7 +558,7 @@ namespace
 		static void Install()
 		{
 			// BSInputDeviceManager::PollInputDevices, the call to BSInputDeviceManager::SendEvents
-			REL::Relocation<std::uintptr_t> target{ REL::ID{ 68617 }, 0x7B };
+			REL::Relocation<std::uintptr_t> target{ REL::ID{ 67315 }, 0x7B }; // VERIFIED
 
 			// Its own, so a mod using this library doesn't have to budget for it in the shared trampoline.
 			static REL::Trampoline trampoline{ "ModConfigUI" };
